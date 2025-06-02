@@ -1,0 +1,72 @@
+[
+  {
+    "id": "breaking-bad",
+    "imagenPortada": "https://i.pinimg.com/474x/50/c9/47/50c947c65a9055a613a1c1967bb2ddf4.jpg",
+    "titulo": "Breaking Bad",
+    "genero": "Drama criminal, Thriller",
+    "descripcion": "Un profesor de química con cáncer terminal se asocia a un exalumno para fabricar y vender metanfetamina, llevándolo a una vida de crimen y peligro."
+  },
+  {
+    "id": "la-nannny",
+    "imagenPortada": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/1993/11/w1280/1zEdxchngKLIoHK2dEUXO8BgonA.jpg",
+    "titulo": "La Niñera",
+    "genero": "Comedia, Sitcom",
+    "descripcion": "Fran Fine, una encantadora y extrovertida mujer de Queens, se convierte inesperadamente en la niñera de los tres hijos de un rico productor de Broadway en Manhattan."
+  },
+  {
+    "id": "juegos-de-tronos",
+    "imagenPortada": "https://hips.hearstapps.com/hmg-prod/images/juego-de-tronos-primera-temporada-1558599291.jpg?resize=640:*",
+    "titulo": "Juegos de Tronos",
+    "genero": "Fantasía, Drama, Aventura",
+    "descripcion": "En los Siete Reinos de Poniente, familias nobles luchan por el control del Trono de Hierro mientras una antigua amenaza resurge en el norte."
+  },
+  {
+    "id": "naruto",
+    "imagenPortada": "https://es.web.img2.acsta.net/pictures/13/12/13/08/50/378271.jpg",
+    "titulo": "Naruto",
+    "genero": "Anime, Aventura, Fantasía",
+    "descripcion": "La historia de Naruto Uzumaki, un joven ninja huérfano y ruidoso que sueña con convertirse en Hokage, el líder de su aldea, y así obtener el reconocimiento de su gente."
+  },
+  {
+    "id": "better-call-saul",
+    "imagenPortada": "https://www.ecartelera.com/carteles-series/000/30/002_p.jpg",
+    "titulo": "Better Call Saul",
+    "genero": "Drama legal, Crimen",
+    "descripcion": "Una precuela de 'Breaking Bad' que sigue la transformación de Jimmy McGill, un abogado luchador, en el corrupto Saul Goodman."
+  },
+  {
+    "id": "unsee",
+    "imagenPortada": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/SHZKE7KFG5FMRKI4BVQLSVWTFE.jpg",
+    "titulo": "Invisible",
+    "genero": "Thriller, Misterio, Drama",
+    "descripcion": "Una mujer trabaja limpiando casas de lujo cuando su vida da un giro inesperado al verse envuelta en una conspiración criminal, con su marido desaparecido."
+  },
+  {
+    "id": "black-mirror",
+    "imagenPortada": "https://poptaim.com/wp-content/uploads/2020/07/Black-Mirror-poster.jpg",
+    "titulo": "Black Mirror",
+    "genero": "Ciencia ficción, Distopía, Anthología",
+    "descripcion": "Una serie de episodios independientes que exploran los aspectos oscuros y tecnológicos de la sociedad moderna."
+  },
+  {
+    "id": "friends",
+    "imagenPortada": "https://i.pinimg.com/736x/26/31/d8/2631d8fcdca20c412e66a124079ca1df.jpg",
+    "titulo": "Friends",
+    "genero": "Comedia, Sitcom",
+    "descripcion": "Las cómicas aventuras y desventuras de seis amigos veinteañeros en la ciudad de Nueva York mientras navegan por la vida, el amor y la carrera profesional."
+  },
+  {
+    "id": "snowpiercer",
+    "imagenPortada": "https://i.pinimg.com/736x/5f/e2/60/5fe260da8e6a97b4f132d09401f5e8bf.jpg",
+    "titulo": "Snowpiercer",
+    "genero": "Ciencia ficción, Drama, Thriller",
+    "descripcion": "En un futuro congelado, los sobrevivientes de la humanidad viajan en un tren perpetuo que refleja las desigualdades sociales de su extinto mundo."
+  },
+  {
+    "id": "merli",
+    "imagenPortada": "https://es.web.img3.acsta.net/pictures/21/01/07/05/12/3047149.jpg",
+    "titulo": "Merlí",
+    "genero": "Drama, Adolescencia, Filosofía",
+    "descripcion": "Un profesor de filosofía poco convencional, Merlí Bergeron, utiliza métodos poco ortodoxos para enseñar a sus alumnos a pensar críticamente y a ser ellos mismos, mientras lidia con sus propios problemas personales."
+  }
+]

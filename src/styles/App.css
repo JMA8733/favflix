@@ -1,0 +1,439 @@
+/*---------------- REGLAS POR DEFECTO QUE VENIAN EN index.css --------------------------*/
+:root {
+  font-size: 16px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+h1 {
+  line-height: 1.1;
+  text-align: center;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*------------------------ MIS ESTILOS APLICADOS -------------------------------*/
+/*------------------------ LAYOUT PRINCIPAL -------------------------------*/
+.weather-widget {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: #646cff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hamburger-btn {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #333;
+  color: #e0e0e0;
+  border: none;
+  font-size: 1.4rem;
+  z-index: 1001;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar {
+  width: 18.75rem;
+  background-color: #555;
+  padding: 1.5rem;
+  flex-shrink: 0;
+  height: 100vh;
+  position: relative;
+  z-index: 1001;
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.sb-imagen-logo {
+  width: 100%;
+  max-width: 13rem;
+  border-radius: 8%;
+  display: block;
+  margin: auto;
+}
+
+.sb-separador {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, #646cff 0%, #fff 100%);
+  margin: 1.5rem auto;
+  border: none;
+  opacity: 0.5;
+}
+
+.sidebar h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 0.625rem;
+}
+
+.sidebar a {
+  color: #e0e0e0;
+  padding: 0.3rem 0.6rem;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.sidebar a.active {
+  background: linear-gradient(90deg, #646cff 0%, #fff 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  /*padding: 1.25rem;*/
+}
+
+/*-------------------- TARJETAS DE PRESENTACION -------------------------*/
+
+.team-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  max-width: 100%;
+  min-height: 49vh;
+}
+
+.presentation-card {
+  background-color: #fff;
+  width: 17.5rem;
+  height: 16rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.presentation-card:hover {
+  transform: translateY(-0.3rem);
+}
+
+.image-card-container {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.mascot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.info-card-container {
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  z-index: 1;
+  /*color: #e0e0e0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-card {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.presentation-card::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(135deg, #8b5cf6 60%, #6366f1 100%);
+  border-radius: 0.6rem;
+  z-index: 0;
+}
+
+/*-------------------- PERFIL DE MIEMBRO -------------------------*/
+
+.member-profile {
+  width: 100%;
+  min-height: 100%;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #e0e0e0;
+}
+
+.member-profile ul {
+  list-style: none;
+}
+
+.member-profile h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.member-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.member-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-photo {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.member-profile h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes sliderInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.member-profile {
+  animation: sliderInRight 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/*-------------------- CONTENEDOR DE ICONOS DE TECNOLOGIAS Y LENGUAJES -------------------------*/
+
+.tech-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  justify-content: center;
+}
+
+.tech-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+/*-------------------- DATOS JSON -------------------------*/
+
+/*-------------------- PÁGINA NO ENCONTRADA -------------------------*/
+
+.error-member-profile,
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.not-found-page h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ff8c42;
+}
+
+.not-found-page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/*-------------------------------- MEDIA QUERYS ----------------------------------------*/
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-container {
+    flex-direction: column;
+  }
+  .hamburger-btn {
+    display: block;
+    position: fixed;
+    top: 1.25rem;
+    left: 0.6rem;
+    z-index: 1002;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    height: 100vh;
+    width: 16rem;
+    transform: translateX(calc(-16rem + 1.5rem));
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 1rem;
+    width: calc(100% - 1rem);
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .member-profile {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .member-profile h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .member-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .member-photo {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 0;
+  }
+  .member-info div {
+    text-align: center;
+  }
+}

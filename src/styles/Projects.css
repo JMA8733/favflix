@@ -1,0 +1,95 @@
+
+/* Contenedor de las tarjetas de proyectos */
+.member-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columnas en desktop, 1 en móvil */
+  gap: 1.5rem; /* Espacio entre tarjetas */
+  margin-top: 0.5rem;
+}
+
+/* Estilos para la tarjeta de proyecto individual */
+.project-card {
+  background-color: #333;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-0.3rem); /* Efecto al pasar el mouse */
+}
+
+.project-image {
+  width: 100%; /* Ocupa todo el ancho de la tarjeta */
+  height: 10rem; /* Altura fija para las imágenes */
+  object-fit: cover; /* Recorta la imagen para que encaje */
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background-color: #555;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project-links a {
+  display: inline-block;
+  background-color: #646cff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.project-links a:hover {
+  background-color: #535bf2;
+}
+
+/* Media query para móviles si necesitas ajustes específicos para las tarjetas */
+@media (max-width: 768px) {
+  .member-projects-grid {
+    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    padding: 0.3;
+  }
+
+  .project-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
